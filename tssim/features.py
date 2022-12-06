@@ -8,7 +8,7 @@ class Feature():
         return self.transform(index, x, history)
 
     def transform(self, index: int, x: float, history: Sequence[float]) -> float:
-        return x
+        raise NotImplementedError("Feature not implemented!")
 
 
 class Polynomial(Feature):
